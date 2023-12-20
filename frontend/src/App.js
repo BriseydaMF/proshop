@@ -1,7 +1,8 @@
 import { Container } from "react-bootstrap";
+import Header from "./components/Header";
 
 import React from 'react'
-import Header from "./components/Header";
+
 
 const App = () => {
   return (
@@ -13,6 +14,6 @@ const App = () => {
       </Container>
     </main>
     </>
-  )
+  );
 };
 export default App;
