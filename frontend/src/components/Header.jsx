@@ -6,7 +6,7 @@ import React from 'react'
 const Header = () => {
   return (
     <header>
-        <Navbar bg='dark' variant='dark' expand='md' collapseOnSelect>
+        <Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect>
             <Container>
                 <Navbar.Brand href='/'>ProShop</Navbar.Brand>
                 <Navbar.Toggle aria-controls='basic-navbar-nav' />
@@ -25,4 +25,4 @@ const Header = () => {
     </header>
   );
 };
-export default Header
+export default Header;
