@@ -15,7 +15,7 @@ const Product = ({ product }) => {
         </a>
         
         <Card.Text as="h3">
-            ${product}
+            ${product.price}
         </Card.Text>
         </Card.Body>
     </Card>
