@@ -49,3 +49,4 @@ const destroyData = async () => {
         process.exit(1);
     }
 };
+
