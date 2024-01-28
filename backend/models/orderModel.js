@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 
-const orderSchema = mongoose.Schema({
+const orderSchema = mongoose.Schema(
+    {
     user: {
         type: mongoose.Schema.Types.ObjectId,
         required: true,
@@ -17,7 +18,7 @@ const orderSchema = mongoose.Schema({
             required: true,
             ref: "Product",
           },
-        }
+        },
     ],
     shippingAddress: {
         address: { type: String, required: true },
@@ -71,9 +72,11 @@ const orderSchema = mongoose.Schema({
     deliveredAt: {
         type: Date,
     },
-}, {
+}, 
+{
     timestamps: true,
-});
+}
+);
 
 const Order = mongoose.model("Order", orderSchema);
 
